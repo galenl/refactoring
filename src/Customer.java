@@ -22,10 +22,7 @@ public class Customer {
 
         while (rentalsEnum.hasMoreElements()) {
             Rental each = rentalsEnum.nextElement();
-            frequentRenterPoints++;
-            if ((each.getMovie().getPriceCode() == Movie.NEW_RELEASE) && each.getDaysRented() > 1)
-                frequentRenterPoints++;
-
+            frequentRenterPoints += each.getFrequentRenterPoints();
             result += "\t" + each.getMovie().getTitle() + "\t" + each.getCharge() + "\n";
             totalAmount += each.getCharge();
         }

@@ -1,3 +1,5 @@
+package com.galen;
+
 /**
  * @author galen
  */

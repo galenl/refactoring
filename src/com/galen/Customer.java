@@ -1,3 +1,5 @@
+package com.galen;
+
 import java.util.Enumeration;
 import java.util.Vector;
 
@@ -16,7 +18,7 @@ public class Customer {
 
     public String statement() {
         Enumeration<Rental> rentalsEnum = rentals.elements();
-        String result = "Rental Record for " + getName() + "\n";
+        String result = "com.galen.Rental Record for " + getName() + "\n";
 
         while (rentalsEnum.hasMoreElements()) {
             Rental each = rentalsEnum.nextElement();
